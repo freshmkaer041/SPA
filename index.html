@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>SPA dla programistów</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__center container">
+      <div class="nav__logo">
+        <h1>IT<span> SPA</span></h1>
+      </div>
+
+      <ul class="nav__list">
+        <div class="nav_container">
+          <a href="#">Start</a>
+          <a href="#booking">Rezerwacja</a>
+          <a href="#products">Zabiegi</a>
+        </div>
+        <div class="cart__icon">
+          <h2>Koszyk</h2>
+          <span class="item__total">0</span>
+        </div>
+      </ul>
+
+      <div class="hamburger">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </div>
+    </div>
+  </nav>
+  <!-- About us -->
+  <section class="about_us">
+    <div class="about_container">
+      <div class="title">
+        <h1>IT SPA</h1>
+        <p>SPA w samym centrum Mordoru!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms -->
+  <section id="booking" class="booking">
+    <div class="booking_center">
+      <h1>Wybierz termin rezerwacji</h1>
+      <div class="booking_input_center">
+        <label for="start">Data od:</label>
+        <input class="date_from" type="date" id="start" name="rezerwation-start">
+        <label for="start">Data do:</label>
+        <input class="date_to" type="date" id="end" name="rezerwation-start">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products">
+    <div class="product__center">
+
+    </div>
+  </section>
+
+  <section class="cart__overlay">
+    <div class="cart">
+      <span class="close__cart">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </span>
+      <h1>Twój koszyk</h1>
+      <div class="reservation_container">
+        <p>Rezerwacja od: </p>
+        <span class="reservation_from"></span>
+        <p>Rezerwacja do:</p>
+        <span class="reservation_to"></span>
+      </div>
+
+      <div class="cart__centent">
+      </div>
+
+      <div class="cart__footer">
+        <h3>Razem: <span class="cart__total">0</span> ZŁ</h3>
+        <button class="clear__cart btn">Wyczyść koszyk</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="footer_container">
+      <p>© Copyright SPA IT 2021</p>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
